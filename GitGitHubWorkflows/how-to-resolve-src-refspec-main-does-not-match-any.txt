@@ -1,0 +1,13 @@
+git push -u origin main
+error: src refspec main does not match any
+
+
+>> The resolution is to check if there are any commits. One possibility is that you haven't made any commits yet.
+
+[CHECK WITH] git status (You'll see something like "No commits yet")
+
+[RESOLVE WITH]
+
+git add .
+git commit -m "Initial commit"
+git push -u origin main

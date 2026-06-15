@@ -1,0 +1,48 @@
+So while setting up, I've had a different README in the GitHub repo vs the local repo.
+Upon trying to do a git pull (after specifying that the local repo tracks the GitHub repo), I've encountered this error.
+
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+The discussion, along with the steps, is this:
+
+(1) Identify the file with a merge conflict
+(2) Upon opening, you'll encounter something like:
+	<<<<<<< HEAD
+	-- contents of my local repo --
+	========
+	-- contents of the GitHub repo --
+	>>>>>>> 31df96175d8705e91469830ade2f196a9fd4e5cd
+
+(3) Let's say that the content I want is the contents of the local repo
+(4) We remove:
+====>  <<<<< HEAD
+====>  =========
+====>  >>>>> 31df96175d8705e91469830ade2f196a9fd4e5cd
+====>  the contents of the GitHub repo
+
+(5) We save the file
+(6) Then we run: git add README.md
+(7) Then we complete the merge: git commit
+(8) If Git opens an editor with a merge commit message, just save and close it.
+(9) After that, git push should work.
+	--- [NOTES]: Do I need to run git pull --allow-unrelated-histories here? (In my actual case, the merge conflict appeared while doing the git pull)
+	--- The answer is no.
+	--- The idea is that I'm already in the middle of that pull/merge. What I need to do is to finish it.
+        --- To repeat:
+        ---      edit README.md
+        ---      save it
+        ---      git add README.md
+        ---      git commit
+	---         -- This completes the git pull (which does the merge)
+	---         -- Expect a window to appear, just save and close it (The window that appears seems to be Vim)
+	---         --     Press Esc a few times, don't panic if nothing seems happening.
+        ---         --     Type this ==> :wq
+        ---         --     Press Enter
+	---      git push (uploads the finished merge to GitHub)
+
+>> [EXTRA NOTES]
+====> During conflicts resolution, you are not limited to choosing one of the two sides of the file you've made. You can keep local, remote, combine them, add extra text, or write a totally new final version.
+====> The actual resolution of the conflict happens in the "git add README.md" part, at least in the example.
+====> This is an important concept to internalize: pulling and merging happens locally first, nothing changes on GitHub until you push.

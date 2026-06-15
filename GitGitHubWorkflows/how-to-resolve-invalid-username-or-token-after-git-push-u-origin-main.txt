@@ -1,0 +1,4 @@
+1. Rerun this again:
+	"git push -u origin main"
+2. Check if Git Credential Manager will provide you a way to login with a token or a browser. (I've logged in with my browser)
+3. Setting this up normally resolves the issue.

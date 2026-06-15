@@ -1,0 +1,6 @@
+This is for retrieving the URL for use in "git remote add origin"
+
+1. Go to your GitHub repository page
+2. Click the green "Code" button
+3. Make sure HTTPS is selected (unless you're using SSH)
+4. Copy the URL shown

@@ -1,0 +1,48 @@
+
+1. Create a GitHub repository link
+	GitHub >> Create New >> New Repository
+2. Create a repository name and a description
+3. You will be taken to a page that describes what should be done next
+4. 	-- First, copy the https link given to you for the repo (For example, it can be: https://github.com/DreamlessBallpen/personal-tech-how-to.git)
+5. Next is to "create a new repository on the command line" or "push an existing repository on the command line"
+	-- To read this another way: "Use the command line to connect your local project folder to the GitHub repository you've created"
+6. [CRITERIA]: How do you determine which of the two should be used, then?
+	-- Answer: Go to your project folder (in command prompt) and run "git status"
+		--> If you get: "fatal: not a git repository"
+		--> Then git has never been initialized, so we create a new repository on the command line first.
+		
+		--> If you get: "On branch main
+				 Nothing to commit"
+			or
+				"Changes not staged for commit"
+			Then: Git already exists.
+
+
+[CREATE A NEW REPOSITORY]
+# First memorizing project
+7. echo "# sample-repo-name-here" >> README.md
+8. git init
+9. git add README.md
+10. git commit -m "first commit"
+
+-- On this portion, if you don't have your username and email address set up yet, you'll get a message stating something like
+-- "Please tell me who you are"
+
+-- 10.1: Run these, and omit "global" if you want to set the identity only in this repository.
+-- You can use your GitHub email here, to protect your private email.
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+
+11. git branch -M main
+12. git remote add origin https://github.com/DreamlessBallpen/sample-repo-url.git
+13. git push -u origin main
+
+
+[PUSH AN EXISTING REPOSITORY ON THE COMMAND LINE]
+
+14. git remote add origin https://github.com/DreamlessBallpen/sample-repo-url.git
+15. git branch -M main
+16. git push -u origin main
