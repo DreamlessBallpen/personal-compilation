@@ -1,0 +1,8 @@
+In order to test, we need to make requests, receive responses, check that those responses match what we would expect.
+
+We can do automated tests, but for now, we want to do a "manual exploratory testing". Normally this is what is done first, then we turn those manual tests into automated tests.
+
+1. We need the Insomnia client to make requests to our API and get responses.
+	-- Link to the insomnia client: https://insomnia.rest/pricing
+2. Go to the Essentials portion (the free option)
+3. Download the app for your platform.
