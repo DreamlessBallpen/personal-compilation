@@ -1,0 +1,7 @@
+If a file is already being tracked before placing in .gitignore, then adding it to .gitignore won't do anything.
+What needs to be done is to untrack this first.
+
+1. Determine the file to untrack with "git status"
+2. Untrack the file with "git rm --cached <<file>>"
+3. Commit the changes with "git commit -m 'Your commit message here, like `Remove the file for tracking`'"
+4. Update the .gitignore file!

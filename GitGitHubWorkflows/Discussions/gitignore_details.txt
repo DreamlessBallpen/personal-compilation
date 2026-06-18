@@ -1,0 +1,1 @@
+Something to know is that gitignore only applies to untracked files.

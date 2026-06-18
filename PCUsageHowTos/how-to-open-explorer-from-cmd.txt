@@ -1,0 +1,4 @@
+# The idea is to open file explorer from the directory you are already in, in command prompt.
+
+1. Go to the location that you want to open in file explorer.
+2. Type "explorer ." If it's just explorer, it doesn't open from the directory you are in. The dot is needed.
