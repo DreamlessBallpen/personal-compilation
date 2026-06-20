@@ -4,5 +4,11 @@ We can do automated tests, but for now, we want to do a "manual exploratory test
 
 1. We need the Insomnia client to make requests to our API and get responses.
 	-- Link to the insomnia client: https://insomnia.rest/pricing
-2. Go to the Essentials portion (the free option)
-3. Download the app for your platform.
+2. Click the "Download for Windows" icon that you see. (For the open source and free tier version they display)
+3. Install Insomnia
+4. I didn't register with any email, just used "Use local scratch pad"
+5. [Can vary] Find the option to make a "New Request" and make a new request.
+6. Paste the url of the page that you want to test interaction with. (Beside the GET portion, in the area where you can paste URLs)
+	- Don't forget to append the /endpoint that you have!
+7. You can click "send" as long as your site is running.
+8. You should see the data that your API returns.

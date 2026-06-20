@@ -1,0 +1,3 @@
+If you want to see the parameters that can be used for a command, all you need to do is add -h.
+
+1. git <<command>> -h

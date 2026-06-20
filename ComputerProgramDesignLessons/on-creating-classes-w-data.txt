@@ -1,0 +1,4 @@
+
+"This is very similar to the design principle you've been moving toward in your QA automation project: keep the data model (Vertex, Edge, Graph) separate from the behavior/state of a particular operation (BFS, Dijkstra, shortest-path search, etc.). That separation pays off as the project grow"
+
+-- The lesson learnt here is to keep the data model separate from the behavior or state of a particular operation.

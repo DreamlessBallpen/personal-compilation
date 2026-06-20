@@ -1,0 +1,21 @@
+This is currently my best guess, I'll just go ahead and report later to see if this has the same results as the video:
+
+1. Open command prompt
+2. Activate the virtual environment that contains your flask package installation
+3. Navigate to the folder that contains the app.py script
+4. Type "flask run" in the terminal and press enter
+5. (What we expect is that flask will look for an app.py script in the files, and inside that app.py, it's gonna look for a variable called "app")
+6. Ok! It does work: Got this result, same as the video's:
+
+* Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+
+>> The warning here means that, when you deploy the application to share with the users, you shouldn't share it by typing "flask run"
+
+>> The address is thought of as:
+	-- When we make requests to this Flask app, we make them on this address.
+	-- When we send data to this address, this data is going to be forwarded to the Flask app.
+
+>> Yay, the app is running. For now, we can stop it with CTRL C

@@ -1,0 +1,8 @@
+This is version 1 because it's a rudimentary version.
+
+1. Run the server with "flask run" in command prompt.
+2. Copy the url provided in command prompt and paste to the browser.
+3. Append the endpoint you've defined to the link 
+	--> Example: http://127.0.0.1:5000/store
+4. Voila! If it works, then you get the info from your endpoint.
+5. If it doesn't, then you probably get something like a 404.

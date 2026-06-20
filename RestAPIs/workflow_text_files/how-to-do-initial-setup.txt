@@ -1,0 +1,16 @@
+1. Create a virtual environment: .venv
+	(This is a hidden folder, just what he used for his preference)
+2. Activate the virtual environment
+3. Install the requirements: pip install flask
+4. Create a file called "app.py"
+5. Inside that file, create some standard boilerplate code:
+	--> from flask import Flask
+	--> app = Flask(__name__)
+
+>> This creates a lot of stuff for us, including:
+	-- Being able to run the app.
+>> Apparently the second line of the code can be referred to as: "the app is Flask, with dunder name as the argument"
+>> If we define endpoints in the app that can:
+	-- Accept data and return a response
+>> Running this app will make endpoints available to a client.
+>> Running the app is the thing we always want to do when we use flask.

@@ -1,0 +1,36 @@
+1. Define where you will store your data.
+	- For now, we use a typical python list
+	- But later on, we work with a database.
+2. We do so with a decorator:
+	- @app.get("/store") <-- This is the endpoint, to append in the server link
+3. (Example): (From app.py)
+
+	--> from flask import Flask
+	--> app = Flask(__name__)
+	
+	--> stores = [
+	--> 	{
+	--> 		"name" : "My Store",
+	-->		"items" : [
+	-->			{
+	-->				"name" : "Chair",
+	-->				"price" : 15.99
+	--> 			}
+	--> 		]
+	--> 	}
+	--> ]
+
+	--> @app.get("/store")
+	--> def get_store():
+	--> 	return {"stores": stores}
+
+>> This is our Flask endpoint or function definition.
+>> Also called a "Flask route"
+>> The endpoint is: slash store
+>> The function definition associated to that endpoint is the function get_store
+
+>> Restart your app when you make changes to the code!
+>> Newlines, spaces and so on doesn't matter in JSON data.
+>> The order of items doesn't matter as well.
+
+>> Notice that if you check out the page, then you need to paste the url given in command prompt, and add the /store backslash.
