@@ -19,3 +19,6 @@ Press CTRL+C to quit
 	-- When we send data to this address, this data is going to be forwarded to the Flask app.
 
 >> Yay, the app is running. For now, we can stop it with CTRL C
+
+
+==> June 27, 2026: Retried this, got a message that my organization's Device Guard policy is blocking flask.exe apparently.

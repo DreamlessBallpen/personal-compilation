@@ -1,0 +1,2 @@
+--> You probably want to create a custom copy method as well
+--> Don't forget to manually copy nested structures to avoid shared references
